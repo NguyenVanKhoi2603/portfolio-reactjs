@@ -69,7 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-
+````
 > echo "# portfolio-reactjs" >> README.md
 > git init
 > git add README.md
@@ -77,3 +77,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 > git branch -M main
 > git remote add origin https://github.com/NguyenVanKhoi2603/portfolio-reactjs.git
 > git push -u origin main
+````
