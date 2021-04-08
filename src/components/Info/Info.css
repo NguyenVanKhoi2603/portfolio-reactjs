@@ -1,0 +1,16 @@
+/*
+ * Info css File
+*/
+
+.Info {
+    /* propertys here */
+}
+
+.contact-info {
+    flex: none;
+    padding: 10px;
+    margin: 10px;
+}
+.contact-info a {
+    margin: 9px;
+}
