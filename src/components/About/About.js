@@ -19,14 +19,10 @@ class About extends Component {
 
   render() {
     return (
-      <div >
-        <div className="justify-content-center align-items-center">
-          <Jumbotron className="bg-white">
-            <h1 style={{ height: 600, backgroundColor: 'gray' }}>H!</h1>
-          </Jumbotron>
-
+      <div id="about">
+        <div className="d-flex justify-content-center align-items-center">
+          <h1 style={{ height: 600, backgroundColor: 'gray' }}>H!</h1>
         </div>
-
         <h1 className="d-flex" style={{ textAlign: 'center', justifyContent: 'center', justifyItems: 'center' }}>About</h1>
       </div>
     );

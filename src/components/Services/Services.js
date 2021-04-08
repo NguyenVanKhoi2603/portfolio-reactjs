@@ -18,7 +18,7 @@ class Services extends Component {
 
   render() {
     return (
-      <div style={{ height: 600, backgroundColor: 'red' }}>
+      <div id="service" style={{ height: 600, backgroundColor: 'red' }}>
         <h1>Services</h1>
       </div>
     );

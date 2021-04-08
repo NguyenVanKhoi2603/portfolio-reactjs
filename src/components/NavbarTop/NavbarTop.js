@@ -30,19 +30,19 @@ class NavbarTop extends Component {
             </Navbar.Text>
           </Navbar.Collapse>
         </Navbar> */}
-        <Nav className="justify-content-center" activeKey="/home">
+        <Nav className="justify-content-center info" activeKey="/home">
           <Nav.Item>
-            <Nav.Link href="#">Active</Nav.Link>
+            <Nav.Link href="#info">Information</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="#portfolio"><a href="#portfolio">Portfolio</a></Nav.Link>
+            <Nav.Link href="#portfolio" eventKey="#portfolio">Portfolio</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="link-2">Link</Nav.Link>
+            <Nav.Link href="#about" eventKey="link-2">About</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="disabled" disabled>
-              Disabled
+            <Nav.Link href="#service" eventKey="disabled" disabled>
+              Service
         </Nav.Link>
           </Nav.Item>
         </Nav>

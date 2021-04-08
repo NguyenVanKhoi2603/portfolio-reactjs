@@ -12,7 +12,7 @@ function App() {
       <NavbarTop></NavbarTop>
       <Info></Info>
       <About></About>
-      <Portfolio id="portfolio"></Portfolio>
+      <Portfolio></Portfolio>
       <Services></Services>
       <span>Hello! My name is Khoi</span>
     </div>

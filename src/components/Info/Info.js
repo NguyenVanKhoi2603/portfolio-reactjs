@@ -11,7 +11,7 @@ class Info extends Component {
 
   render() {
     return (
-      <Container fluid>
+      <Container id="info" fluid>
 
         <Row xs={1} md={2}>
           <Col className="row justify-content-center align-items-center">
