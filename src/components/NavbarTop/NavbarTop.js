@@ -21,7 +21,7 @@ class NavbarTop extends Component {
   render() {
     return (
       <Container fluid>
-        <Navbar>
+        {/* <Navbar>
           <Navbar.Brand href="#home">Navbar with text</Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
@@ -29,7 +29,23 @@ class NavbarTop extends Component {
               Signed in as: <a href="#login">Mark Otto</a>
             </Navbar.Text>
           </Navbar.Collapse>
-        </Navbar>
+        </Navbar> */}
+        <Nav className="justify-content-center" activeKey="/home">
+          <Nav.Item>
+            <Nav.Link href="#">Active</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link eventKey="#portfolio"><a href="#portfolio">Portfolio</a></Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link eventKey="link-2">Link</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link eventKey="disabled" disabled>
+              Disabled
+        </Nav.Link>
+          </Nav.Item>
+        </Nav>
       </Container>
 
     );
