@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Jumbotron } from 'react-bootstrap';
+import { Jumbotron, ProgressBar, Container, Row, Col } from 'react-bootstrap';
 import './About.css';
 
 class About extends Component {
@@ -17,14 +17,32 @@ class About extends Component {
   // componentWillUpdate(){}
   // componentDidUpdate(){}
 
+
   render() {
+
+    const now = 60;
+    const progressInstance = <ProgressBar now={now} label={`${now}%`} />;
     return (
-      <div id="about">
-        <div className="d-flex justify-content-center align-items-center">
-          <h1 style={{ height: 600, backgroundColor: 'gray' }}>H!</h1>
+      <Container fluid>
+        <div id="about">
+          <div className="content">
+            <h1 className="d-flex" style={{ textAlign: 'center', justifyContent: 'center', justifyItems: 'center' }}>About</h1>
+            <div>
+              <Row>
+                <Col>
+                </Col>
+                <Col>
+                  <span>Javascript</span>
+                  {progressInstance}
+                </Col>
+              </Row>
+
+            </div>
+          </div>
+
         </div>
-        <h1 className="d-flex" style={{ textAlign: 'center', justifyContent: 'center', justifyItems: 'center' }}>About</h1>
-      </div>
+      </Container>
+
     );
   }
 }

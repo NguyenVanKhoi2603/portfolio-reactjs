@@ -5,3 +5,21 @@
 .About {
     /* propertys here */
 }
+.content {
+    padding: 75px 0 75px 0;
+}
+
+.progress-bar {
+    margin: 5px;
+    padding: 5px;
+    height: 10px;
+    /* background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%); */
+    /* variant: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%); */
+
+}
+div .progress {
+    background: white;
+}
+.content ProgressBar {
+    background: none;
+}

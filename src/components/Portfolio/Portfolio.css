@@ -4,4 +4,12 @@
 
 .Portfolio {
     /* propertys here */
+   
+}
+
+.portfolio {
+    margin-top: 20px;
+}
+.content {
+    padding: 75px 0 75px 0;
 }

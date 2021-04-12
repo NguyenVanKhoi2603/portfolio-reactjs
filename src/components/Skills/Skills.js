@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './Footer.css';
+import './Skills.css';
 
-class Footer extends Component {
+class Skills extends Component {
   // constructor(props){
     // super(props);
     // this.state = {};
@@ -23,4 +23,4 @@ class Footer extends Component {
   }
 }
 
-export default Footer;
+export default Skills;
