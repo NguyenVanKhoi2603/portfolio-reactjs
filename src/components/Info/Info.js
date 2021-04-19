@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './Info.css';
-import { Card, Button, Container, Image, Row, Col, Jumbotron } from "react-bootstrap";
+import { Container, Image, Row, Col, Jumbotron } from "react-bootstrap";
 import avatar from '../../images/info.png';
 import { FaFacebook, FaGithub, FaEnvelope, FaMobileAlt, FaPhoneAlt } from "react-icons/fa";
+import { Button } from "antd";
 class Info extends Component {
   // constructor(props){
   // super(props);
@@ -12,13 +13,12 @@ class Info extends Component {
   render() {
     return (
       <Container id="info" fluid>
-
         <Row xs={1} md={2}>
           <Col className="row justify-content-center align-items-center">
             <Jumbotron className="bg-white">
-              <h1>Hello, world!</h1>
-              <h1> <b>I'm Khoi Nguyen</b></h1>
-              <p>Mobile & Web Developer</p>
+              <h1 className="unselectable">Hello, world!</h1>
+              <h1> <b className="unselectable">I'm Khoi Nguyen</b></h1>
+              <p className="unselectable">Mobile & Web Developer</p>
               <div className="contact-info">
                 <a href="https://www.facebook.com/khoinguyen2603/">
                   <i>
@@ -35,13 +35,13 @@ class Info extends Component {
                     <FaEnvelope style={{ width: 24, height: 24 }} />
                   </i>
                 </a>
-
                 <a href="tel:0862912981">
                   <i>
                     <FaPhoneAlt style={{ width: 24, height: 24 }} />
                   </i>
                 </a>
               </div>
+              <Button target="_blank" href="/cv" type="primary" ghost>View CV</Button>
 
             </Jumbotron>
 
@@ -49,10 +49,9 @@ class Info extends Component {
           </Col>
 
           <Col>
-            <Image style={{ width: 600, height: 700 }} src={avatar} fluid></Image>
+            <Image style={{ width: 600, height: 700 }} src="https://cdn4.vectorstock.com/i/1000x1000/75/28/young-man-wearing-sleeveless-top-faceless-avata-vector-15127528.jpg" fluid></Image>
           </Col>
         </Row>
-
       </Container>
 
     );

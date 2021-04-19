@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-import NavbarTop from './components/NavbarTop';
-import Info from './components/Info';
-import About from './components/About/About';
-import Portfolio from './components/Portfolio/Portfolio';
-import Services from './components/Services/Services';
-import MyFooter from './components/MyFooter';
-function App() {
-  document.title = "Khoi Nguyen";
 
-  return (
-    <div className="App">
-      <NavbarTop></NavbarTop>
-      <Info></Info>
-      <About></About>
-      <Portfolio></Portfolio>
-      <Services></Services>
-      <MyFooter></MyFooter>
-    </div>
-  );
-}
+import './App.css';
+import React, { Suspense, lazy } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import MainPage from './Pages/MainPage/MainPage';
+const Home = lazy(() => import('./Pages/MainPage'));
+const CV = lazy(() => import('./Pages/CurriculumVitae'));
+
+const App = () => (
+  <Router>
+    <Suspense fallback={<div>Loading...</div>}>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/cv" component={CV} />
+      </Switch>
+    </Suspense>
+  </Router>
+);
 
 export default App;
